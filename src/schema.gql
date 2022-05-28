@@ -1,0 +1,49 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Trade {
+  """Example field (placeholder)"""
+  test: Int!
+}
+
+type Exchange {
+  """name of exchange"""
+  name: String!
+
+  """description of exchange"""
+  description: String
+}
+
+type Data {
+  datetime: Int!
+  open: Float!
+  high: Float!
+  low: Float!
+  close: Float!
+  volume: Float!
+}
+
+type Query {
+  tradeAll: [Trade!]!
+  trade(id: Int!): Trade!
+  exchange(id: Int!): Exchange!
+  fetchData: [Data!]!
+}
+
+type Mutation {
+  createExchange(createExchangeInput: CreateExchangeInput!): Exchange!
+  updateExchange(updateExchangeInput: UpdateExchangeInput!): Exchange!
+  removeExchange(id: Int!): Exchange!
+}
+
+input CreateExchangeInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateExchangeInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
