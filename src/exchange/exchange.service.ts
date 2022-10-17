@@ -13,8 +13,8 @@ export class ExchangeService {
   constructor() {
     
     this.exchange = new bybit({
-      apiKey: 'X1OgT46GUEnxxUdPBT',
-      secret: '86CQrr3EexkDy3gv8lrLmNrMsrioTyP3ehpH',
+      apiKey: '',
+      secret: '',
       enableRateLimit: true,
       // options: {
       //   defaultType: 'futures',
